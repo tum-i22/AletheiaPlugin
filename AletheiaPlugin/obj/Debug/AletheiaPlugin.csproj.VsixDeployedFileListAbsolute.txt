@@ -1,0 +1,4 @@
+C:\Users\i22\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Company\AletheiaPlugin\1.0\\AletheiaPlugin.dll
+C:\Users\i22\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Company\AletheiaPlugin\1.0\\AletheiaPlugin.pdb
+C:\Users\i22\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Company\AletheiaPlugin\1.0\\AletheiaPlugin.pkgdef
+C:\Users\i22\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Company\AletheiaPlugin\1.0\\extension.vsixmanifest

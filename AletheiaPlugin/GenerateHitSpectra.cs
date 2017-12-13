@@ -180,12 +180,13 @@ namespace AletheiaPlugin
 
 
 
-            cmd.StandardInput.WriteLine("C:\\Users\\i22\\Desktop\\Repo\\Copy\\Aletheia\\Aletheia\\bin\\x64\\Debug\\Aletheia.exe " + "do=GenerateHitSpectra project_path=" +
-                vcxProj + " source_directory=" +
-                srcDir + " gtest_path=" + gtestPath);
+            cmd.StandardInput.WriteLine("Aletheia.exe " + "do=GenerateHitSpectra project_path=" +
+                vcxProj + " source_directory=" + 
+                srcDir + " degreeofparallelism=15" + " gtest_path=" + gtestPath);
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();
-            cmd.WaitForExit();
+            //cmd.WaitForExit();
+            cmd.Close();
 
        
         }
@@ -220,15 +221,18 @@ namespace AletheiaPlugin
             string OpenCppCoveragePath = GetFullPath("OpenCppCoverage.exe");
             if (AletheiaPath!=null && OpenCppCoveragePath != null)
             {
-                //invoke shell
-            }else
+                //invoke shell=
+                LaunchCommandLineApp();
+                message = "Default Locaiton of HitSpectra is C:\\Hitspectras";
+            }
+            else
             {
                 if (AletheiaPath == null)
                     message = "Aletheia.exe is not on system path variable; ";
                 if (OpenCppCoveragePath == null)
                     message += " OpenCppCoverage.exe is not on system path variable";
             }
-            LaunchCommandLineApp();
+            
             // Show a message box to prove we were here
             VsShellUtilities.ShowMessageBox(
                 this.ServiceProvider,

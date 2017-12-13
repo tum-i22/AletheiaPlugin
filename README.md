@@ -19,7 +19,10 @@ i) The HitSpectra will be generated in ```C:\HitSpectras``` folder by default
 Plugin is much slower than the app itself. Please give the plugin time to generate hit spectra. If you have a bigger project with a lot of test cases, please use the App instead as the plugin is much slower. <br />
 Aletheia and Aletheia Plugin are both computation hungry. If you are using an old computer, these tools might cause your system to hang.
 
-## 4. Contact
+## 4. VS Gallery
+The Plugin will soon be published in Visual Studio Gallery
+
+## 5. Contact
 In case of question, simply email us at<br >
 
 Mojdeh Golagha (golagha@in.tum.de)<br />

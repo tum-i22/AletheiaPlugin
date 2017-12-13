@@ -56,7 +56,7 @@
         <Parent guid="guidGenerateHitSpectraPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Invoke GenerateHitSpectra</ButtonText>
+          <ButtonText>Aletheia-GenerateHitSpectra</ButtonText>
         </Strings>
       </Button>
     </Buttons>
